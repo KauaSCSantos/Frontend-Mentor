@@ -40,10 +40,9 @@ Users should be able to:
 - CSS custom properties
 - Mobile-first workflow
 
-
 ### Useful resources
 
-- [Example resource 1](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp) - CSS @media Rules in CSS from W3Schools were useful about page's responsivity.
+- [@media Rules CSS](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp) - CSS @media Rules from W3Schools were useful about page's responsivity.
 
 # Author
 
