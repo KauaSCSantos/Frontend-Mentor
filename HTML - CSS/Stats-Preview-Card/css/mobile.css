@@ -1,0 +1,125 @@
+:root {
+    --bg-body: hsl(233, 47%, 7%);
+    --bg-card: hsl(244, 38%, 16%);
+    --violet: hsl(277, 64%, 61%);
+    --p-white: hsla(0, 0%, 100%, 0.75);
+    --stats-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background-color:  var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+    color: var(--p-white);
+}
+
+.card {
+    align-items: center;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.top-box {
+    height: 30%;
+    width: 100%;
+}
+
+.top-box img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    filter: opacity(0.5) drop-shadow(0 0 0 blue);
+    height: 100%;
+    width: 100%;
+}
+
+.bottom-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 15px;
+    height: 70%;
+    text-align: center;
+    width: 100%;
+}
+
+.bottom-box .description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-box .description h1 {
+    font-family: 'Inter', sans-serif;
+}
+
+.bottom-box .description h1 span {
+    color: var(--violet);
+}
+
+.bottom-box .description p {
+    color: var(--stats-white);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5rem;
+    margin-top: 15px;
+    width: 85%;
+}
+
+.bottom-box .stats {
+    margin-top: 20px;
+}
+
+.bottom-box .stats .stats-item {
+    margin-top: 30px;
+}
+
+.bottom-box .stats .stats-item h2 {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+
+.bottom-box .stats .stats-item p {
+    color: var(--stats-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.attribution {
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 85%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
