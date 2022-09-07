@@ -1,0 +1,200 @@
+:root {
+    --bg-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --border-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-blue);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    position: relative;
+}
+
+.card {
+    width: 350px;
+    height: 600px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: var(--card-blue);
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--soft-blue);
+}
+
+.card-image .nft {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.card-image .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.card-image .overlay img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-image:hover .overlay {
+    opacity: 1;
+}
+
+.card-image:hover .nft {
+    opacity: 0.3;
+}
+
+/* Card description */
+
+.description {
+    height: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line-blue);
+}
+
+.title {
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    transition: 0.5s ease;
+}
+
+.description:hover .title {
+    color: hsl(178, 100%, 50%);
+}
+
+.text {
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.price-time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.price-time .price {
+    width: 50%;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.price-time .price img {
+    width: 10px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.price-time .time {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.price-time .time img {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+
+/* Creator */
+
+.creator {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.creator img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.creator p {
+    color: var(--soft-blue);
+}
+
+.creator span {
+    color: var(--white);
+    font-weight: 400;
+    transition: 0.5s ease;
+}
+
+.creator:hover span {
+    color: var(--cyan);
+}
+
+/* Attribution */
+
+.attribution {
+    display: flex;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: var(--card-blue);
+    width: 350px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.attribution p {
+    font-size: 13px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--soft-blue);
+}
